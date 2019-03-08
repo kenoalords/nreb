@@ -1,0 +1,24 @@
+{
+  "name": "nreb",
+  "version": "1.0.0",
+  "description": "Nigerian Real-Estate Blog",
+  "main": "index.js",
+  "scripts": {
+    "dev": "NODE_ENV=development webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development webpack --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production webpack --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.7.4",
+    "laravel-mix": "^4.0.14",
+    "purify-css": "^1.2.5",
+    "purifycss-webpack": "^0.7.0",
+    "sass": "^1.17.2",
+    "sass-loader": "^7.1.0",
+    "sw-precache-webpack-plugin": "^0.11.5",
+    "vue-template-compiler": "^2.6.7"
+  }
+}

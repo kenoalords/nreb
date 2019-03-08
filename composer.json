@@ -1,0 +1,8 @@
+{
+	"require": {
+		"donatj/phpuseragentparser": "*",
+		"swiftmailer/swiftmailer": "^6.0",
+		"geoip/geoip": "~1.16",
+		"geoip2/geoip2": "~2.0"
+	}
+}

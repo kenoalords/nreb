@@ -53,6 +53,8 @@ get_header(); ?>
 	</div><!-- #primary -->
 	
 </div><!-- .wrap -->
-
+<script>
+  fbq('track', 'ViewContent');
+</script>
 <?php
 get_footer();

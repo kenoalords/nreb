@@ -19,6 +19,7 @@
     "sass": "^1.17.2",
     "sass-loader": "^7.1.0",
     "sw-precache-webpack-plugin": "^0.11.5",
-    "vue-template-compiler": "^2.6.7"
+    "vue-template-compiler": "^2.6.7",
+    "waypoints": "^4.0.1"
   }
 }

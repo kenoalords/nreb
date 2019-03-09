@@ -329,6 +329,7 @@ add_filter( 'comment_form_fields', 'cm_custom_comment_form_fields', 10, 1 );
 
 function cm_custom_comment_form_fields($fields){
 	unset($fields['url']);
+	unset($fields['cookies-consent']);
 
 	$fields['comment'] = '<p class="comment-comment">
 					<label for="author">' . __( 'Comment' ) . '</label> ' .
@@ -346,11 +347,11 @@ function cm_custom_comment_form_fields($fields){
                 ( $req ? '<span class="required">*</span>' : '' ) . '<input id="email" placeholder="Email address" name="email" type="email" class="input" value="' . esc_attr( $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />'.
                 '</div></div>';
 
-     $fields['subscribe'] = '<p class="comment-form-subscribe">
-						<label for="subscribe">
-							<input type="checkbox" name="subscribe" value="yes" checked="checked"> Notify me of awesome new content. <small class="cancel-text">Cancel at anytime.</small>
-						</label>
-     				</p>';
+     // $fields['subscribe'] = '<p class="comment-form-subscribe">
+					// 	<label for="subscribe">
+					// 		<input type="checkbox" name="subscribe" value="yes" checked="checked"> Notify me of awesome new content. <small class="cancel-text">Cancel at anytime.</small>
+					// 	</label>
+     // 				</p>';
                   
 	return $fields;
 }
@@ -465,10 +466,14 @@ add_shortcode( 'nreblog-blog-post', 'nreblog_blog_post_cb' );
 
 function nreblog_blog_post_cb($attr){
 	$category = ( isset($attr['category']) ) ? $attr['category'] : '';
+	$exclude = ( isset($attr['exclude']) ) ? $attr['exclude'] : '';
+	$limit = ( isset($attr['limit']) ) ? $attr['limit'] : 5;
+	// var_dump($exclude);
 	$query = new WP_Query(
 		array(
 			'category_name' => $category,
-			'showposts'	=> 5
+			'showposts'	=> $limit,
+			'post__not_in'	=> array($exclude),
 		)
 	);
 	if ( $query->have_posts() ){

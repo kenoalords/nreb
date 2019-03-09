@@ -39,6 +39,7 @@ get_header(); ?>
 								);
 
 							endwhile; // End of the loop.
+							echo do_shortcode( '[nreblog-blog-post exclude='.$post->ID.' limit=5]' );
 						?>
 					</div>
 					<aside class="column is-4 blog-sidebar">

@@ -14,7 +14,7 @@
 			<div class="level-left">
 				<div class="level-item"><span class="date"><?php echo get_the_author() ?></span></div>
 				<div class="level-item"><span class="date"><?php echo get_the_date() ?></span></div>
-				<div class="level-item">Comments <span class="date"><?php echo get_comment_count( )['approved'] ?></span></div>
+				<div class="level-item"><a href="#comments"><span class="icon"><i class="fas fa-comments"></i></span> <span class="date"><?php echo get_comment_count( $post->ID )['approved'] ?></span></a></div>
 			</div>
 		</div>
 	</header><!-- .entry-header -->
@@ -47,9 +47,6 @@
 	</div><!-- .entry-content -->
 	<div class="author media">
 		<span class="badge"><span class="icon"><i class="fas fa-pen"></i></span> Author</span>
-		<div class="media-left">
-			<p></p>
-		</div>
 		<div class="media-content">
 			<h4 class="title is-5 bold"><?php echo get_the_author() ?></h4>
 			<p><?php echo get_the_author_meta( 'user_description', false ); ?></p>

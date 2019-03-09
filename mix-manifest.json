@@ -1,4 +1,5 @@
 {
+    "/worker.js": "/worker.js",
     "/wp-content/themes/nreblog/assets/app.js": "/wp-content/themes/nreblog/assets/app.js",
     "/wp-content/themes/nreblog/assets/app.css": "/wp-content/themes/nreblog/assets/app.css"
 }

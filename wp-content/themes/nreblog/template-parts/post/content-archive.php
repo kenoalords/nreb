@@ -23,7 +23,7 @@
 			<div class="level-left">
 				<div class="level-item"><span class="date"><?php echo get_the_author() ?></span></div>
 				<div class="level-item"><span class="date"><?php echo get_the_date() ?></span></div>
-				<div class="level-item">Comments <span class="date"><?php echo get_comment_count( )['approved'] ?></span></div>
+				<div class="level-item"><span class="icon"><i class="fas fa-comments"></i></span> <span><?php echo get_comment_count( $post->ID )['approved'] ?></span></div>
 			</div>
 		</div>
 	</header><!-- .entry-header -->

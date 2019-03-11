@@ -43,6 +43,9 @@
 				</a>
 			</div>
 			<div class="navbar-menu" id="navMenu">
+				<div class="navbar-start">
+					<?php get_search_form( true ); ?>
+				</div>
 				<div class="navbar-end">
 					<a href="<?php echo esc_url( home_url(  ) ) ?>" class="navbar-item">Home</a>
 					<a href="<?php echo get_category_link( 2 ); ?>" class="navbar-item">Investment</a>

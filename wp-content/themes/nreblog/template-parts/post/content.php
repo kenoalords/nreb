@@ -46,8 +46,8 @@
 		?>
 	</div><!-- .entry-content -->
 	<div class="author media">
-		<span class="badge"><span class="icon"><i class="fas fa-pen"></i></span> Author</span>
 		<div class="media-content">
+			<span class="author-title"><span class="icon"><i class="fas fa-pen"></i></span> Author</span>
 			<h4 class="title is-5 bold"><?php echo get_the_author() ?></h4>
 			<p><?php echo get_the_author_meta( 'user_description', false ); ?></p>
 		</div>

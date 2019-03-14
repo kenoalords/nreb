@@ -33,7 +33,7 @@
 
 <div class="offline-notice">
 	<span class="notice">
-		<span class="icon"><img src="<?php echo IMAGES . '/wifi-off-white.svg' ?>" alt="" style="max-width: 16px;"></span> <span>No internet connection</span>
+		<span class="icon"><img src="<?php echo IMAGES . '/wifi-off-white.svg' ?>" alt="Wifi Icon" style="max-width: 16px;"></span> <span>No internet connection</span>
 	</span>
 </div>
 

@@ -25,6 +25,7 @@
 				<div class="container">
 					<div class="columns">
 						<div class="column is-8">
+							<?php echo do_shortcode( '[nreblog-blog-post category="tips"]' ); ?>
 							<?php echo do_shortcode( '[nreblog-blog-post category="investment"]' ); ?>
 							<?php echo do_shortcode( '[nreblog-blog-post category="real-estate"]' ); ?>
 						</div>

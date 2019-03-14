@@ -34,7 +34,7 @@
 		<div class="container">
 			<div class="navbar-brand">
 				<a href="<?php echo esc_url( home_url( ) ); ?>" id="site-logo">
-					<img src="<?php echo IMAGES . '/logo.svg' ?>" alt="<?php echo get_bloginfo('site_name'); ?>">
+					<img src="<?php echo IMAGES . '/logo.svg?v=1.1' ?>" alt="<?php echo get_bloginfo('site_name'); ?>">
 				</a>
 				<a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
 					<span aria-hidden="true"></span>
